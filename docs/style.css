@@ -51,7 +51,7 @@ video  {
 
 .imagen-centro {
     text-align: center;   /* Centra el contenido dentro del div */
-    margin: 30px 0;       /* Espacio arriba y abajo */
+    margin: 80px 0;       /* Espacio arriba y abajo */
 }
 
 .imagen-centro img {
