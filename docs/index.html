@@ -6,87 +6,63 @@
 
     <!-- enlaza tu CSS -->
     <link rel="stylesheet" href="style.css">
+</head>
 
-    <!-- TODO el CSS adicional va AQUÍ, no podemos abrir otro head -->
-    <style>
-      body, html {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-        background-color: #97A8D2;
-      }
+<head>
+  <meta charset="utf-8">
+  <title>Festival App</title>
 
-      /* BARRA SUPERIOR */
-      .top-bar {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        padding: 12px;
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        background-color: rgba(151,168,210,0.85);
-        backdrop-filter: blur(4px);
-        z-index: 10;
-      }
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #97A8D2;
+    }
 
-      .btn {
-        background-color: #97A8D2;
-        border: 2px solid #7C8EB3;
-        padding: 12px 20px;
-        border-radius: 14px;
-        font-size: 17px;
-        cursor: pointer;
-        color: white;
-        font-weight: bold;
-      }
+    /* BARRA SUPERIOR */
+    .top-bar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 12px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background-color: rgba(151,168,210,0.85);
+      backdrop-filter: blur(4px);
+      z-index: 10;
+    }
 
-      .logo-btn {
-        padding: 6px 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #97A8D2;
-        border-radius: 14px;
-        border: none;
-      }
+    /* BOTONES (con borde más oscuro) */
+    .btn {
+      background-color: #97A8D2;
+      border: 2px solid #7C8EB3;
+      padding: 12px 20px;
+      border-radius: 14px;
+      font-size: 17px;
+      cursor: pointer;
+      color: white;
+      font-weight: bold;
+    }
 
-      .icono {
-        height: 140px;
-        width: auto;
-      }
+    /* BOTÓN DEL LOGO — SIN BORDE */
+    .logo-btn {
+      padding: 6px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #97A8D2;
+      border-radius: 14px;
+      border: none; /* ⭐ SIN BORDE */
+    }
 
-      /* PREVIEW NOTICIA */
-      .preview-noticia {
-        max-width: 900px;
-        margin: 60px auto;
-        padding: 20px;
-        background: white;
-        border-radius: 12px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-      }
-
-      .preview-noticia img {
-        width: 100%;
-        border-radius: 10px;
-      }
-
-      .preview-noticia h3 {
-        margin-top: 15px;
-        color: #333;
-        font-size: 22px;
-        font-family: Arial, sans-serif;
-      }
-
-      .preview-noticia p {
-        color: #555;
-        margin-bottom: 10px;
-      }
-
-      .preview-noticia a {
-        text-decoration: none;
-      }
-    </style>
+    /* LOGO */
+    .icono {
+      height: 140px;
+      width: auto;
+    }
+  </style>
 </head>
 
 <body>
@@ -103,11 +79,68 @@
     <button class="btn">Conclusión</button>
   </nav>
 
+<body>
 
 <div class="contenido">
 
-  <div class="contenedor">
-    <div class=
+<div class="contenedor">
+  <div class="texto">
+    <p>
+      En 1993, Shakira llegó a Chile por primera vez para presentarse en la Competencia Internacional del Festival de Viña del Mar. Tenía 16 años y presentó su canción "Eres", la que la posicionó en el tercer lugar del certamen. Cuando subió a la Quinta Vergara por primera vez, nadie imaginaba que esa joven colombiana, vestida con sencillez y con una melena negra, estaba a punto de convertirse en una de las artistas más influyentes del continente. Para miles de televidentes, esa noche fue la primera vez que escucharon su nombre. Para Shakira, fue la primera vitrina real donde su carrera empezó a crecer.
+    </p>
+  </div>
+
+  <div class="imagen">
+    <img src="shakira-1.png" alt="Shakira en Viña">
+  </div>
+</div>
+
+
+ <video controls width="600">
+    <source src="Shakira, Eres, Festival de Viña del Mar 1993 (720p_24fps_H264-128kbit_AAC).mp4" type="video/mp4">
+    
+</video>
+
+</div>
+
+<div class="contenedor-texto">
+<div class="parrafo-shakira">
+    <p>
+        Treinta años después, Shakira se ha convertido en una de las artistas latinoamericanas más
+        reconocidas a nivel mundial. Lo que comenzó como una presentación de una joven representando a su país en la Competencia
+        Internacional de Viña del Mar terminó siendo el punto de partida de una carrera que
+        hoy acumula hitos globales. A lo largo de tres décadas, la colombiana ha recibido algunos de los reconocimientos más importantes de la industria musical. Hoy, la cantautora de "Loba", cuenta con más de 520 premios, en los que destacan quince Latin Grammy y cuatro Grammys. Sus discos han encabezado rankings mundiales, sus
+        giras llenan estadios, solo en Chile ha logrado ser la primera mujer en llenar cuatro veces el Estadio Nacional. Con grandes clásicos como "Hips Don't Lie" y "Whenever, Wherever" o con su éxitos más recientes como "Girl like me", la colombiana ha logrado traspasar generaciones.
+    </p>
+
+    <p>
+        Sin embargo, es imposible olvidar que todo ese éxito y reconocimiento internacional llegó luego de su participación en el Festival Internacional de la Canción de Viña del Mar. Ese primer paso sobre la Quinta Vergara permanece como un recuerdo clave dentro de la carrera de Shakira:
+        el momento en que una joven de 16 años, casi desconocida fuera de su país, encontró una vitrina que la proyectaría mucho más allá de Chile.
+    </p>
+</div>
+
+  <div class="imagen-centro">
+    <img src="Shakira-2.png" alt="Shakira en Concierto">
+</div>
+
+<div class="contenedor">
+  <div class="parrafo-shakira">
+
+<p>
+  Este paso por Viña del Mar fue tan decisivo para su carrera que la propia Shakira ha reconocido públicamente lo importante que fue en su camino como artista.</p>
+  
+<p> "El Festival de Viña del Mar fue indudablemente un momento muy determinante en mi carrera, recuerdo lo emocionada que estaba de ver a Ricky Martín en el jurado, me encantaba Ricky Martín y dije que increíble que lo tengo en el jurado”.</p>
+
+  </div>
+</div>
+
+<div class="preview-noticia">
+    <a href="https://www.13.cl/programas/entretencion/todos-a-vina/shakira-recalco-la-importancia-del-festival-de-vina-en-su" target="_blank">
+        <img src="shakira-preview.jpg" alt="Preview noticia Shakira">
+        <h3>Shakira recalcó la importancia del Festival de Viña en su carrera</h3>
+        <p>La cantante reconoció que Viña fue un punto decisivo en su camino como artista…</p>
+    </a>
+</div>
 
    <p>Puedes visitar nuestro 
         <a href="//miro.com/app/board/uXjVJuTYokk=/" title="ola">sitio</a>
