@@ -79,12 +79,6 @@ body {
       padding: 0;
     }
 
-    .texto {
-      max-width: 500px;
-      line-height: 1.5;
-      text-align: justify;
-      color: #111;
-    }
 
     .imagen img {
       width: 500px;
@@ -100,14 +94,6 @@ body {
       max-width: 100%;
     }
 
-    .contenedor-texto {
-      max-width: 900px;
-      margin: 20px auto;
-      padding: 20px 24px;
-      line-height: 1.6;
-      font-size: 18px;
-      text-align: justify;
-    }
 
     .imagen-centro {
       text-align: center;
