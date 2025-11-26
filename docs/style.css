@@ -192,6 +192,8 @@ body {
 video  {
     display: block;
     margin: 50px auto;
+    margin-top: 200px;
+    margin-bottom: 200px;
     border-radius: 10px;
 }
 
