@@ -70,6 +70,22 @@ video  {
     text-align: justify;
 }
 
+.preview-card {
+  display: block;
+  width: 280px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #000;
+  overflow: hidden;
+  background: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.preview-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0
+
 .boton-centro {
     text-align: center;
     margin: 40px 0;
