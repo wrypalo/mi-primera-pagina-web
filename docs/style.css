@@ -13,12 +13,13 @@ body {
 
 .contenedor {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 30px;
-  margin: 0 auto;
+  margin: 30px auto;
   max-width: 1000px;
-  padding: 40px 0;
+  padding:  0;
 }
 
 .texto {
