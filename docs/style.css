@@ -197,7 +197,7 @@ video  {
     border-radius: 10px;
 }
 
-.imagen-lira{
+.imagen-lira img {
   width: 300px;      /* ancho más pequeño */
   height: auto;      /* mantiene la proporción original */
   display: block;    /* necesario para centrar con margin */
