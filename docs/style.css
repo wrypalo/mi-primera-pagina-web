@@ -18,19 +18,19 @@ body {
   align-items: center;
   gap: 30px;
   margin: 30px auto;
-  max-width: 1000px;
+  max-width: 1050px;
   padding: 40px 0;
 }
 
 .texto {
-  max-width: 500px;
+  max-width: 480px;
   font-family: "Futura", serif;
   line-height: 1.6;
   text-align: justify;
 }
 
 .imagen img {
-  width: 500px;
+  width: 480px;
   height: auto;
   border-radius: 8px;
   display: block;
