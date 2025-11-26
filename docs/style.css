@@ -49,6 +49,17 @@ video  {
   font-family: "Futura", serif;
 }
 
+.imagen-centro {
+    text-align: center;   /* Centra el contenido dentro del div */
+    margin: 30px 0;       /* Espacio arriba y abajo */
+}
+
+.imagen-centro img {
+    width: 450px;
+    height: auto;
+    border-radius: 10px;
+}
+
 .contenido {
     margin-top: 120px;   /* Aumenta o disminuye según necesites */
 }
