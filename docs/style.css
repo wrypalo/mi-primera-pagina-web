@@ -13,11 +13,11 @@ body {
 
 .contenedor {
   display: flex;
-  justify-content: center;   /* CENTRA horizontalmente el bloque entero */
-  align-items: center;       /* Alinea verticalmente */
+  justify-content: center;
+  align-items: center;
   gap: 30px;
-  margin: 40px auto;            /* Esto también ayuda a centrar */
-  max-width: 1000px;         /* Para que no se haga gigante */
+  margin: 40px auto;
+  max-width: 1000px;
   padding: 40px 0;
 }
 
@@ -26,7 +26,9 @@ body {
   font-family: "Futura", serif;
   line-height: 1.6;
   text-align: justify;
-
+  display: flex;               /* ← ESTA LÍNEA */
+  flex-direction: column;      /* ← ESTA LÍNEA */
+  justify-content: center;     /* ← ESTA LÍNEA */
 }
 
 .imagen img {
