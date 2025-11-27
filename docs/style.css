@@ -286,11 +286,11 @@ video  {
 }
 
 .inicios-viña {
-  text-align: center; /* centra el texto dentro del div */
-  max-width: 900px;   /* opcional: limita ancho para que se vea mejor */
-  margin: 0 auto;     /* centra el div en la página si tiene ancho menor al contenedor */
-  padding: 20px 40px; 
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 40px;
   font-family: "Futura", sans-serif;
   line-height: 1.6;
   font-size: 18px;
+  text-align: justify; /* el bloque ya está centrado gracias al margin */
 }
