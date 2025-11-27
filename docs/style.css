@@ -183,6 +183,7 @@ video  {
   display: block;    /* necesario para centrar con margin */
   margin: 20px auto; /* centra horizontalmente y deja un poco de espacio arriba y abajo */
   margin-top: 400px;
+  margin-bottom: 400px;
   border-radius: 8px; /* opcional: bordes redondeados */
 }
 
@@ -199,7 +200,6 @@ video  {
 .imagen-centro {
     text-align: center;
     margin: 40px ;  /* o 40px si prefieres menos */
-    margin-top: 400px;
 }
 
 .imagen-centro img {
