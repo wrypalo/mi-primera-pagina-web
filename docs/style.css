@@ -304,7 +304,7 @@ video  {
     margin-bottom: 200px;
 }
 
-.parrafo.inicios-viña {
+.parrafo.historia-viña {
   text-align: center; /* centra el texto dentro del div */
   max-width: 900px;   /* opcional: limita ancho para que se vea mejor */
   margin: 0 auto;     /* centra el div en la página si tiene ancho menor al contenedor */
