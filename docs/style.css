@@ -69,16 +69,6 @@ body {
       padding: 20px;
     }
 
-    .contenedor {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 30px;
-      margin: 30px 0;
-      max-width: 1000px;
-      padding: 0;
-    }
-
     video {
       display: block;
       margin: 30px auto;
@@ -149,8 +139,9 @@ body {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  gap: 30px;
-  margin: 30px auto;
+  gap: 40px;
+  margin: 40px auto;
+  max-width: 1000px;
 }
 
 .texto {
