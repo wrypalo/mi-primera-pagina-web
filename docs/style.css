@@ -300,5 +300,6 @@ video  {
     height: auto;
     border-radius: 10px;
     display: block;
-    margin: 200px auto;
+    margin-top: 100px;
+    margin-bottom: 200px;
 }
