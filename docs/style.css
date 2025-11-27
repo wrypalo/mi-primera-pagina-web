@@ -238,21 +238,22 @@ video  {
   }
 
   .parrafo.pregunta {
-    display: inline-block;      /* permite padding y borde */
-    padding: 15px 25px;
-    margin: 40px auto;
-    border: 3px solid #eb008b;  /* color del borde */
-    border-radius: 12px;        /* bordes redondeados tipo botón */
-    font-weight: bold;
-    font-size: 22px;
-    background-color: #eb008b;  /* color suave detrás */
-    text-align: center;
-    color: white;
-    font-family: "Futura", sans-serif;
-    width: fit-content;
-    margin: 300px auto;
-  
+  display: inline-block;
+  margin: 300px auto;
+  padding: 15px 25px;
+  border: 3px solid #eb008b;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 22px;
+  background-color: #eb008b;
+  text-align: center;
+  color: white;
+  font-family: "Futura", sans-serif;
+  width: fit-content;
+  display: block;
 }
+
+
   .parrafo.vitrina {
   text-align: center; /* centra el texto dentro del div */
   max-width: 900px;   /* opcional: limita ancho para que se vea mejor */
