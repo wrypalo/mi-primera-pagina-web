@@ -265,13 +265,15 @@ video  {
 }
 
 
-.grafico-cabezas img {
-    width: 700px;
-    height: auto;
+.grafico.cabezas img {
+    width: 100%;       /* toma el ancho del contenedor */
+    max-width: 700px;  /* no se hará más grande que 700px */
+    height: auto;      /* mantiene proporciones */
     border-radius: 10px;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto;    /* centra horizontalmente */
 }
+
 
 .separador-antorcha {
   display: flex;
