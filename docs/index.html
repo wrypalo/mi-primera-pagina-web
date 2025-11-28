@@ -185,7 +185,11 @@ var spec = {
   "encoding": {
     "x": {"field": "categoria", "type": "nominal", "title": "Categoría"},
     "y": {"field": "cantidad", "type": "quantitative", "title": "Cantidad"},
-    "color": {"field": "categoria", "type": "nominal"}
+    "color": {
+      "field": "categoria",
+      "type": "nominal",
+      "scale": {"range": ["#7E4782", "#2E3566", "#8FA3CC"]}
+    }
   },
   "width": 400,
   "height": 300,
