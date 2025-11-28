@@ -316,6 +316,6 @@ video  {
 }
 
 #vis1 {
-    width: fit-content;   /* ajusta al tamaño del gráfico */
-    margin: 50px auto;    /* centrado horizontalmente */
+  width: fit-content;
+  margin: 30px auto;
 }
