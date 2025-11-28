@@ -77,12 +77,12 @@ body {
     }
 
 
-    .imagen-centro {
+    .imagen-nosotras {
       text-align: center;
       margin: 40px 0;
     }
 
-    .imagen-centro img {
+    .imagen-nosotras img {
       width: 700px;
       max-width: 100%;
       height: auto;
@@ -184,12 +184,12 @@ video  {
   font-family: "Futura", serif;
 }
 
-.imagen-centro {
+.imagen-nosotras {
     text-align: center;
     margin: 40px ;  /* o 40px si prefieres menos */
 }
 
-.imagen-centro img {
+.imagen-nosotras img {
     width: 700px;
     height: auto;
     border-radius: 10px;
