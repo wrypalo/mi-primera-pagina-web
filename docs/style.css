@@ -304,15 +304,12 @@ video  {
     margin-bottom: 200px;
 }
 
-.parrafo.historia.viña {
-  text-align: center; /* centra el texto dentro del div */
-  max-width: 900px;   /* opcional: limita ancho para que se vea mejor */
-  margin: 0 auto;     /* centra el div en la página si tiene ancho menor al contenedor */
-  margin-top: 70px;
-  margin-bottom: 100px;
-  text-align: justify;
+.parrafo.historia.vina {
+  max-width: 900px;
+  margin: 100px auto;   /* ajusta según lo que quieras de separación vertical */
   padding: 20px 40px; 
   font-family: "Futura", sans-serif;
   line-height: 1.6;
   font-size: 18px;
-  }
+  text-align: justify; /* si quieres igual que otros párrafos justificados */
+}
