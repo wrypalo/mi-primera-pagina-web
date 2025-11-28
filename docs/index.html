@@ -166,19 +166,56 @@ Con esto comenzaron a mejorar las condiciones en las que se realizaba el festiva
 <p>Este año se cumplen 65 años desde aquel primer show realizado en 1960, y un total de 857 artistas han pisado la Quinta Vergara, mostrando distintos estilos musicales que reflejan cada una de las épocas del festival. Ricky Martin, Kidd Voodoo, Christina Aguilera, The Police, Mon Laferte y Daddy Yankee son solo algunos de los artistas que han participado en este emblemático evento.</p>
 </div>
 
-<div id="vis"></div>
+<!-- Contenedor para el gráfico -->
+<div class="parrafo vitrina">
+  <p>Gráfico: artistas que más se repiten</p>
+
+  <div id="vis"></div>
+</div>
+
+<!-- Script Vega-Lite -->
+<script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 
 <script>
-var spec = {
-  "config": {"view": {"continuousWidth": 300, "continuousHeight": 300}},
-  "data": {"name": "data-xxx"},
-  "mark": {"type": "bar"},
-  "encoding": { ... },
-  "height": 300,
-  "width": 400
-};
-vegaEmbed("#vis", spec, {mode: "vega-lite"}).catch(console.error);
+  var spec = {
+    "config": {"view": {"continuousWidth": 300, "continuousHeight": 300}},
+    "data": {"name": "data-670a68e85a7627b1f420fd9175b75546"},
+    "mark": {"type": "bar"},
+    "encoding": {
+      "color": {
+        "field": "categoria",
+        "scale": {"range": ["#7E4782","#2E3566","#8FA3CC"]},
+        "title": "Categoría",
+        "type": "nominal"
+      },
+      "x": {"field": "categoria", "title": "Categoría", "type": "nominal"},
+      "y": {"field": "cantidad", "title": "Cantidad", "type": "quantitative"}
+    },
+    "height": 300,
+    "width": 400,
+    "title": "Distribución por categoría",
+    "datasets": {
+      "data-670a68e85a7627b1f420fd9175b75546": [
+        {"categoria": "Mujeres", "cantidad": 159},
+        {"categoria": "Hombres", "cantidad": 626},
+        {"categoria": "Mixto", "cantidad": 67}
+      ]
+    }
+  };
+
+  vegaEmbed("#vis", spec, {mode: "vega-lite"}).catch(console.error);
 </script>
+
+<style>
+  /* Centrar el gráfico */
+  #vis {
+    width: fit-content;
+    margin: 30px auto; /* centra horizontalmente */
+  }
+</style>
+
 
 
 
