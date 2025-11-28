@@ -305,7 +305,6 @@ video  {
   text-align: justify; /* el bloque ya está centrado gracias al margin */
 }
 
-/* Imagen antigua del festival centrada */
 .imagen-viña-antiguo img {
     width: 700px;       /* tamaño de la imagen */
     max-width: 100%;    /* para que se adapte en móviles */
@@ -323,6 +322,18 @@ video  {
   line-height: 1.6;
   font-size: 18px;
   text-align: justify;    /* justifica el texto dentro del div */
+}
+
+.grafico-flourish {
+    width: 100%;          /* ocupa todo el ancho disponible */
+    max-width: 800px;     /* tamaño máximo del gráfico */
+    margin: 30px auto;    /* centra horizontalmente y agrega espacio arriba/abajo */
+}
+.grafico-flourish iframe, 
+.grafico-flourish embed, 
+.grafico-flourish object {
+    width: 100% !important;  /* asegura que el gráfico se adapte al contenedor */
+    height: auto !important;
 }
 
 #vis {
