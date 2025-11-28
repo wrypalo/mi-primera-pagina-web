@@ -297,12 +297,11 @@ video  {
 
 .imagen-viña-antiguo img {
     width: 700px;
+    max-width: 100%;      /* para que sea responsive */
     height: auto;
     border-radius: 10px;
     display: block;
-    margin-top: 100px;
-    margin-bottom: 50px;
-
+    margin: 100px auto 50px auto;  /* top, horizontal auto, bottom */
 }
 
 .parrafo.historia.vina {
@@ -313,4 +312,10 @@ video  {
   line-height: 1.6;
   font-size: 18px;
   text-align: justify;    /* justifica el texto dentro del div */
+}
+
+/* CSS para centrar el gráfico Vega-Lite */
+#vis {
+    width: fit-content;  /* Ajusta el ancho al tamaño del gráfico */
+    margin: 30px auto;   /* Centrado horizontal con margen superior e inferior */
 }
