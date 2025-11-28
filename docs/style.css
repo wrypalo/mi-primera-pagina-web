@@ -311,7 +311,7 @@ video  {
     height: auto;       /* mantiene proporción */
     border-radius: 10px;
     display: block;     /* necesario para centrar con margin */
-    margin: 100px auto 50px auto; /* top, horizontal, bottom */
+    margin: 50px auto 50px auto; /* top, horizontal, bottom */
 }
 
     .parrafo.historia.vina {
