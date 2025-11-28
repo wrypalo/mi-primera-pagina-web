@@ -178,43 +178,8 @@ Con esto comenzaron a mejorar las condiciones en las que se realizaba el festiva
 
 </div>
 
-<div class="grafico-centro"></div>
-  <div id="vis"></div>
-</div>
+<div class="flourish-embed" data-src="story/3473309"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/story/3473309/thumbnail" width="100%" alt="visualization" /></noscript></div>
 
-<script>
-var spec = {
-  "data": {
-    "values": [
-      {"categoria": "Mujeres", "cantidad": 159},
-      {"categoria": "Hombres", "cantidad": 626},
-      {"categoria": "Mixto", "cantidad": 67}
-    ]
-  },
-  "mark": "bar",
-  "encoding": {
-    "x": {"field": "categoria", "type": "nominal", "title": "Categoría"},
-    "y": {"field": "cantidad", "type": "quantitative", "title": "Cantidad"},
-    "color": {
-      "field": "categoria",
-      "type": "nominal",
-      "scale": {"range": ["#7E4782", "#2E3566", "#8FA3CC"]}
-    }
-  },
-  "width": 400,
-  "height": 300,
-  "title": "Distribución por categoría"
-};
-
-vegaEmbed("#vis", spec, {mode: "vega-lite"}).catch(console.error);
-</script>
-
-<style>
-#vis {
-  width: fit-content;
-  margin: 30px auto; /* centra horizontalmente */
-}
-</style>
 
 <div class="parrafo analisis">
 
