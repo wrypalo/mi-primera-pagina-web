@@ -185,10 +185,10 @@ Con esto comenzaron a mejorar las condiciones en las que se realizaba el festiva
 <title>Estrellas</title>
 
 <style>
-
+    /* Tus estilos originales */
     body {
         font-family: Futura, sans-serif;
-        background: #fafafa;
+        background: #fafafa; /* fallback */
         text-align: center;
         padding-top: 40px;
     }
@@ -259,15 +259,49 @@ Con esto comenzaron a mejorar las condiciones en las que se realizaba el festiva
         to { opacity: 1; transform: scale(1); }
     }
 
+    /* ---------- OVERRIDES (important) ---------- */
+    /* Fuerza el fondo en todo el documento */
+    html, body {
+      background: #fafafa !important;
+      background-color: #fafafa !important;
+    }
+
+    /* Si Flourish inyecta un wrapper con fondo blanco */
+    .flourish-embed, .flourish-embed * {
+      background: transparent !important;
+      background-color: transparent !important;
+    }
+
+    /* Si hay iframe con fondo */
+    .flourish-embed iframe {
+      background: transparent !important;
+      background-color: transparent !important;
+    }
+
+    /* Si Flourish añade una clase global rara (por si acaso) */
+    [class*="flourish"] {
+      background: transparent !important;
+      background-color: transparent !important;
+    }
 </style>
 </head>
 
-<body>
+<!-- PONGO EL STYLE INLINE EN BODY TAMBIÉN (última línea de defensa) -->
+<body style="background: #fafafa !important;">
 
     <!-- ⭐ ESTRELLA GRANDE + FRASE ARRIBA -->
     <div id="initialBlock">
         <div id="bigStar">★</div>
         <div id="initialText">Cada estrella representa a un artista</div>
+    </div>
+
+    <!-- AQUÍ VA TU EMBED DE FLOURISH (ejemplo) -->
+    <!-- reemplaza data-src por tu story -->
+    <div class="flourish-embed" data-src="story/3473309">
+      <script src="https://public.flourish.studio/resources/embed.js"></script>
+      <noscript>
+        <img src="https://public.flourish.studio/story/3473309/thumbnail" width="100%" alt="visualization" />
+      </noscript>
     </div>
 
     <!-- ⭐ CONTENEDOR DE LAS 259 ESTRELLAS -->
@@ -276,16 +310,11 @@ Con esto comenzaron a mejorar las condiciones en las que se realizaba el festiva
     <!-- ⭐ FRASE FINAL ABAJO (COMO PEDISTE) -->
     <div id="finalText"></div>
 
-
-
 <script>
-
 const total = 259;
 const hombres = 196;
 const mujeres = 42;
 const mixtos = 21;
-
-let count = 0;
 
 const colors = {
     hombre: "#EB008B",
@@ -296,7 +325,6 @@ const colors = {
 const starsContainer = document.getElementById("starsContainer");
 const finalText = document.getElementById("finalText");
 
-/* ⭐ Desaparece la estrella y frase inicial */
 function hideInitialBlock() {
     const big = document.getElementById("bigStar");
     const text = document.getElementById("initialText");
@@ -321,12 +349,10 @@ function addStar() {
             else star.style.color = colors.mixto;
 
             starsContainer.appendChild(star);
-        }, (i / total) * 3000); // 3000 ms = 3 segundos
+        }, (i / total) * 3000);
     }
 }
 
-
-/* ⭐ Frase final */
 function showFinalText() {
     finalText.innerHTML = `
         <div class="final-title">259 artistas</div>
@@ -340,23 +366,22 @@ function showFinalText() {
     finalText.style.animation = "fadeIn 1.8s forwards";
 }
 
-/* ⭐ Secuencia final */
 setTimeout(() => {
-    hideInitialBlock();     // desaparece la estrella grande
-    addStar();              // aparecen las 259 estrellas
+    hideInitialBlock();
+    addStar();
 
     const totalTime = (3 + 0.3) * 1000;
 
     setTimeout(() => {
-        showFinalText();    // aparece frase final ABAJO ❤️
+        showFinalText();
     }, totalTime);
 
 }, 2000);
-
 </script>
 
 </body>
 </html>
+
 
 <div class="parrafo analisis">
 
