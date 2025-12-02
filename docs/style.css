@@ -339,19 +339,16 @@ body {
     background: #97A8D2 !important;
 }
 
-.grafico-chico {
-  width: 200px;     /* achica el gráfico */
-  max-width: 90%;   /* opcional: lo hace responsivo */
-  margin: 0 auto;   /* centrado */
+.grafico-generos {
+  max-width: 400px;   /* AJUSTA ESTE VALOR según el tamaño que quieras */
+  margin: 0 auto;      /* lo centra */
 }
 
-.grafico-chico {
-  width: 100%;      /* importante: ocupa solo lo que permite el contenedor */
-  height: 400px;    /* puedes reducir esta altura */
+.grafico-generos .flourish-embed {
+  width: 100%;
+  height: auto;
 }
-.grafico-chico {
-  margin-bottom: 50px;  /* separa el gráfico de lo que viene abajo */
-}
+
 
 .parrafo.analisi.genero{
   text-align: center; /* centra el texto dentro del div */
