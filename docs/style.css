@@ -121,19 +121,6 @@ body {
   max-width: 1000px;
 }
 
-.texto {
-  max-width: 900px;
-  font-family: "Futura", sans-serif;
-  line-height: 1.6;
-  text-align: justify;
-}
-
-.imagen img {
-  width: 480px;
-  height: auto;
-  border-radius: 8px;
-}
-
 .foto-inicial img {
     width: 900px !important;
     max-width: 900px !important;
