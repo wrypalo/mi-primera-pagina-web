@@ -340,7 +340,7 @@ body {
 }
 
 .grafico-chico {
-  width: 600px;     /* achica el gráfico */
+  width: 400px;     /* achica el gráfico */
   max-width: 90%;   /* opcional: lo hace responsivo */
   margin: 0 auto;   /* centrado */
 }
