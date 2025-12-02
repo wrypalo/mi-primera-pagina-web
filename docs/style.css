@@ -129,6 +129,21 @@ body {
     margin: 70px auto 50px auto;
 }
 
+.parrafo.inicio {
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 70px;
+  margin-bottom: 100px;
+  padding: 20px 40px;
+
+  font-family: "Futura", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+
+  text-align: justify;
+}
+
+
 .parrafo {
   max-width: 900px;
   margin: 0 auto;
