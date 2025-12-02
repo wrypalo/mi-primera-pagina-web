@@ -380,13 +380,8 @@ body {
   font-size: 18px;
 }
 
-.separador-grafico {
-    height: 200px;   /* puedes subirlo a 300 si lo necesitas */
-    width: 100%;
-}
-
 .grafico-estrellas {
-    position: relative; /* importantísimo */
-    margin-top: 200px; 
-    z-index: 10;
+  position: relative; /* importantísimo */
+  margin-top: 120px !important;
+  margin-bottom: 120px !important;
 }
