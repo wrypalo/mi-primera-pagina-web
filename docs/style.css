@@ -372,7 +372,7 @@ body {
   max-width: 900px;   /* opcional: limita ancho para que se vea mejor */
   margin: 0 auto;     /* centra el div en la página si tiene ancho menor al contenedor */
   margin-top: 70px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   text-align: justify;
   padding: 20px 40px; 
   font-family: "Futura", sans-serif;
