@@ -411,7 +411,7 @@ body {
   font-size: 18px;
 }
 
-.foto-inicial {
+.foto-inicial img{
 
   width: 600px; /* cambia este número para hacerlo más chico o más grande */
   text-align: center; /* centra el texto dentro del div */
