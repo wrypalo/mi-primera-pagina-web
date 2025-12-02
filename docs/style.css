@@ -399,7 +399,7 @@ body {
 
 .parrafo.inicio {
   max-width: 900px;
-  margin: 0 auto;       /* CENTRA EL BLOQUE */
+  margin: 0 auto;      /* centra el bloque */
   margin-top: 70px;
   margin-bottom: 100px;
   padding: 20px 40px;
@@ -408,5 +408,6 @@ body {
   font-size: 18px;
   line-height: 1.6;
 
-  text-align: justify;   /* JUSTIFICA EL TEXTO */
+  text-align: justify; /* justifica el texto */
 }
+
