@@ -411,11 +411,12 @@ body {
   font-size: 18px;
 }
 
-.foto-inicial {
+.foto-inicial img {
     width: 600px; 
     margin: 0 auto;
     text-align: center;
     margin-top: 70px;
     margin-bottom: 50px;
     height: auto;
+    max-width: 600px;
 }
