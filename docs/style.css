@@ -412,11 +412,9 @@ body {
 }
 
 .foto-inicial img {
-    width: 900px !important;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 70px;
-    margin-bottom: 50px;
-    height: auto;
+    width: 500px !important;
+    max-width: 500px !important;
+    height: auto !important;
     display: block;
+    margin: 70px auto 50px auto;
 }
