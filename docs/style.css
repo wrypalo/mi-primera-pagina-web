@@ -379,3 +379,10 @@ body {
   line-height: 1.6;
   font-size: 18px;
 }
+
+
+.grafico-estrellas {
+    position: relative; /* importantísimo */
+    margin-top: 200px; 
+    z-index: 10;
+}
