@@ -397,7 +397,7 @@ body {
   margin-bottom: 120px !important;
 }
 
-.grafico.artistas.totales {
+.grafico-artistas-totales {
 
   text-align: center; /* centra el texto dentro del div */
   max-width: 400px;   /* opcional: limita ancho para que se vea mejor */
