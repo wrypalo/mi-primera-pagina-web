@@ -413,6 +413,9 @@ body {
 
 .foto-inicial {
 
-    width: 400px; /* cambia este número para hacerlo más chico o más grande */
-
+  width: 600px; /* cambia este número para hacerlo más chico o más grande */
+  text-align: center; /* centra el texto dentro del div */
+  margin: 0 auto;     /* centra el div en la página si tiene ancho menor al contenedor */
+  margin-top: 70px;
+  margin-bottom: 50px;  
 }
