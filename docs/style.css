@@ -205,12 +205,16 @@
 }
 
 .inicios-viña {
-  display: block;
-  box-sizing: border-box;   /* evita que el padding "desplace" el ancho */
-  width: 100%;
-  max-width: 900px;
-  margin: 100px auto 200px auto; /* centra horizontalmente */
-  padding: 20px 40px;
+    text-align: center; /* centra el texto dentro del div */
+  max-width: 900px;   /* opcional: limita ancho para que se vea mejor */
+  margin: 0 auto;     /* centra el div en la página si tiene ancho menor al contenedor */
+  margin-top: 70px;
+  margin-bottom: 100px;
+  text-align: justify;
+  padding: 20px 40px; 
+  font-family: "Futura", sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
   color: black;
 }
 
