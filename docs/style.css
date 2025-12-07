@@ -217,6 +217,7 @@
   font-size: 18px;
   text-align: justify; /* el bloque ya está centrado gracias al margin */
   color: black;
+  margin-bottom: 200px;
 }
 
 .imagen-viña-antiguo img {
