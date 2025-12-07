@@ -20,6 +20,9 @@ body {
       padding-top: 84px; /* ajusta según la altura real de tu top-bar */
     }
 
+    .seccion-1 { background: #97A8D2; }
+    .seccion-2 { background: #11102c; }
+
     /* BARRA SUPERIOR */
     .top-bar {
       position: fixed;
@@ -212,6 +215,7 @@ body {
   line-height: 1.6;
   font-size: 18px;
   text-align: justify; /* el bloque ya está centrado gracias al margin */
+  color: antiquewhite;
 }
 
 .imagen-viña-antiguo img {
@@ -231,6 +235,7 @@ body {
   line-height: 1.6;
   font-size: 18px;
   text-align: justify;    /* justifica el texto dentro del div */
+  color: antiquewhite;
 }
 
 
@@ -259,7 +264,7 @@ body {
 }
 
 
-.analisis.grafico.generos{
+.parrafo.analisis.grafico.generos{
   text-align: center; /* centra el texto dentro del div */
   max-width: 900px;   /* opcional: limita ancho para que se vea mejor */
   margin: 0 auto;     /* centra el div en la página si tiene ancho menor al contenedor */
