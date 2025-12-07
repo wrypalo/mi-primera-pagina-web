@@ -306,9 +306,22 @@
 }
 
 .carrusel.fotos {
-  max-width: 500px;   /* ajusta el tamaño que quieras */
-  margin: 0 auto;     /* centra el carrusel */
-  padding: 20px 0;    /* opcional */
+  display: flex;
+  justify-content: center; /* centra el carrusel */
+  margin: 50px auto;
+}
+
+.carrusel.fotos .flourish-embed {
+  width: 500px !important;     /* cambia el tamaño aquí */
+  max-width: 100% !important;
+}
+
+.carrusel.fotos iframe {
+  width: 800px !important;     /* tamaño forzado del carrusel */
+  max-width: 100% !important;
+  margin: 0 auto;
+  display: block;
+  border: none;
 }
 
 .grafico-artistas-totales {
