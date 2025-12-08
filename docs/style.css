@@ -387,6 +387,16 @@
   max-width: 1000px !important;
 }
 
+.flourish-wrapper {
+  transform: scale(0.8);   /* achica el gráfico (0.8 = 80%) */
+  transform-origin: top center; /* para que no se desplace raro */
+  width: 100%;
+}
+
+.flourish-embed {
+  width: 1000px !important; /* tamaño base para que el scale funcione bien */
+  max-width: 1000px !important;
+}
 
 .grafico-evolucion-brecha img {
     width: 700px;       /* tamaño de la imagen */
