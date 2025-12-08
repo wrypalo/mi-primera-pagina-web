@@ -390,6 +390,8 @@
   transform-origin: top center;
   width: 1000px !important; /* necesario para que el scale funcione */
   max-width: 1000px !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 .carrusel-wrapper {
@@ -399,12 +401,13 @@
   display: flex;
   justify-content: center; 
   margin: 0 auto;
-  margin-bottom: 100px;
 }
 
 .carrusel-wrapper .flourish-embed {
   width: 1000px !important; /* tamaño base para que el scale funcione bien */
   max-width: 1000px !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 .grafico-latinos {
