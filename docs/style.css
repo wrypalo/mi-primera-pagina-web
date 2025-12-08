@@ -394,11 +394,11 @@
 .grafico.evolución.brecha img {
     width: 300px;       /* tamaño de la imagen */
     display: block;     /* necesario para centrar con margin */
-    margin: 100px auto  
+    margin: 100px auto;
 }
 
 .grafico.premios img {
     width: 300px;       /* tamaño de la imagen */
     display: block;     /* necesario para centrar con margin */
-    margin: 100px auto  
+    margin: 100px auto; 
 }
