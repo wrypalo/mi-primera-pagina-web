@@ -472,7 +472,7 @@
   height: auto;
 }
 
-.tweet {
+.tweet img {
     width: 700px;       /* tamaño de la imagen */
     display: block;     /* necesario para centrar con margin */
     margin: 100px auto;
