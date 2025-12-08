@@ -519,3 +519,14 @@
     display: block;     /* necesario para centrar con margin */
     margin: 100px auto;
 }
+
+.parrafo.destacado {
+  font-size: 1.0 rem;
+  font-weight: 700;
+  color: #7e4782;
+  text-align: center;
+  margin: 300px 0;
+  margin-top: 300px;
+  margin-bottom: 300px;
+  text-transform: uppercase;
+}
