@@ -323,17 +323,15 @@
 }
 
 .grafico-artistas-totales {
+    display: flex;
+    justify-content: center;   /* centra horizontalmente */
+    margin: 40px 0;            /* separación arriba y abajo */
+}
 
-  text-align: center; /* centra el texto dentro del div */
-  max-width: 400px;   /* opcional: limita ancho para que se vea mejor */
-  margin: 0 auto;     /* centra el div en la página si tiene ancho menor al contenedor */
-  margin-top: 70px;
-  margin-bottom: 50px;
-  text-align: justify;
-  padding: 20px 40px; 
-  font-family: "Futura", sans-serif;
-  line-height: 1.6;
-  font-size: 18px;
+.grafico-artistas-totales .flourish-embed {
+    width: 80%;          /* ACHICA el gráfico (prueba 70%, 60%, etc.) */
+    max-width: 700px;    /* límite máximo */
+    margin: 0 auto;      /* por si acaso */
 }
 
 .separador.lira img {
