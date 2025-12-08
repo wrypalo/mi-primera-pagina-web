@@ -546,8 +546,8 @@
   font-weight: 700;
   color: #7e4782;
   text-align: center;
-  margin: 300px 0;
-  margin-top: 300px;
-  margin-bottom: 300px;
+  margin: 300px auto;      /* <-- auto centra el bloque real */
   text-transform: uppercase;
+  max-width: 800px;        /* <-- controla el ancho para que el centrado funcione */
+  display: block;          /* <-- asegura que se comporte como bloque centrable */
 }
