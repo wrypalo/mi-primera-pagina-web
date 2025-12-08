@@ -216,7 +216,7 @@ section {
   text-transform: uppercase;
 }
 
-.intro.nacionalidades {
+.parrafo.intro.nacionalidades {
   max-width: 900px;       /* limita el ancho del bloque */
   margin: 100px auto;     /* centra horizontalmente y separa verticalmente */
   padding: 20px 40px;
