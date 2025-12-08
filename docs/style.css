@@ -391,16 +391,18 @@
   max-width: 1000px !important;
 }
 
-.flourish-wrapper {
-  transform: scale(0.7);   /* achica el gráfico (0.8 = 80%) */
-  transform-origin: top center; /* para que no se desplace raro */
+.grafico-latinos {
   width: 100%;
-  margin: 0 auto;  /* centra horizontalmente */
+  display: flex;
+  justify-content: center; /* centra todo */
+  margin: 0 auto;
 }
 
-.flourish-embed {
-  width: 1000px !important; /* tamaño base para que el scale funcione bien */
-  max-width: 1000px !important;
+.grafico-latinos .flourish-embed {
+  transform: scale(0.75); /* achicar */
+  transform-origin: top center;
+  width: 1000px !important; /* base del gráfico */
+  max-width: 1000px;
 }
 
 .grafico-evolucion-brecha img {
