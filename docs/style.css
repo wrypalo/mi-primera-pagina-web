@@ -14,26 +14,12 @@
       font-family: "Futura", sans-serif;
       background-color: #97A8D2;
       padding-top: 84px; /* ajusta según la altura real de tu top-bar */
-      transition: background-color 1s ease;
-    }
-
-
-/* Colores según sección */
-.seccion-1 {
-  background-color: #97A8D2;
-  height: 100vh;
 }
 
-.seccion-2 {
-  background-color: #11102c;
-  height: 100vh;
-}
-
-.seccion-3 {
-  background-color: #2e3566;
-  height: 100vh;
-}
-
+.seccion-1 { background: #97A8D2;}
+.seccion-2 { background: #11102c;}
+.seccion-3 { background: #2e3566;}
+  
 
     /* BARRA SUPERIOR */
     .top-bar {
