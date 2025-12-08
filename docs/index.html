@@ -197,11 +197,9 @@
 
 <div id="finalText"></div>
 
-  <div class="parrafo brecha">
-    <p>Según los datos recopilados, aproximadamente el 73% de los artistas que se han presentado en Viña son hombres, mientras que solo el 19% corresponde a mujeres y solo un 8% a agrupaciones mixtas. Estos números dejan la situación clara: existe una brecha de género en el festival que no es menor, y aunque en los últimos años se han hecho esfuerzos por diversificar su parrilla, la desigualdad sigue siendo evidente. </p>
-  </div>
 
     <div class="parrafo brecha">
+      <p>Según los datos recopilados, aproximadamente el 73% de los artistas que se han presentado en Viña son hombres, mientras que solo el 19% corresponde a mujeres y solo un 8% a agrupaciones mixtas. Estos números dejan la situación clara: existe una brecha de género en el festival que no es menor, y aunque en los últimos años se han hecho esfuerzos por diversificar su parrilla, la desigualdad sigue siendo evidente. </p>
       <p>Esa tendencia lleva a pensar que la vitrina de Viña no solo muestra, sino que también selecciona: define qué voces son amplificadas y cuáles quedan en segundo plano, dándole más espacio a un género por sobre otro. En un escenario donde cada presentación puede marcar un antes y un después, esa desigualdad se vuelve parte de la historia.</p>
       <p>La tendencia, sin embargo, parece estar cambiando lentamente. En las últimas ediciones se ha visto un esfuerzo por incluir más voces femeninas y proyectos diversos: desde Mon Laferte y Denise Rosenthal, hasta artistas urbanas como Princesa Alba o Paloma Mami, quienes también representan nuevas formas de entender el éxito musical. Pero la proporción sigue siendo desigual, y eso plantea una pregunta inevitable: ¿de qué tipo de vitrina estamos hablando si no todos son invitados a participar en ella?</p>
     </div>
@@ -221,68 +219,85 @@
   </section>
 
  <script>
-    // Datos para las estrellas
     const total = 259;
-    const hombres = 196;
-    const mujeres = 42;
-    const mixtos = 21;
+const hombres = 196;
+const mujeres = 42;
+const mixtos = 21;
 
-    const colors = {
-      hombre: "#EB008B",
-      mujer: "#7E4782",
-      mixto: "#11102c"
-    };
+const colors = {
+    hombre: "#EB008B",
+    mujer: "#7E4782",
+    mixto: "#8FA3CC"
+};
 
-    const starsContainer = document.getElementById("starsContainer");
-    const finalText = document.getElementById("finalText");
+const starsContainer = document.getElementById("starsContainer");
+const finalText = document.getElementById("finalText");
 
-    function hideInitialBlock() {
-      const big = document.getElementById("bigStar");
-      const text = document.getElementById("initialText");
-      big.style.animation = "fadeOut 0.6s forwards";
-      text.style.animation = "fadeOut 0.6s forwards";
-      setTimeout(() => {
-        const block = document.getElementById("initialBlock");
-        if (block) block.style.display = "none";
-      }, 600);
-    }
+/* ================================
+      1️⃣ OCULTAR BLOQUE INICIAL
+================================ */
+function hideInitialBlock() {
+    const big = document.getElementById("bigStar");
+    const text = document.getElementById("initialText");
 
-    function addStar() {
-      for (let i = 0; i < total; i++) {
+    big.style.animation = "fadeOut 0.6s forwards";
+    text.style.animation = "fadeOut 0.6s forwards";
+
+    setTimeout(() => {
+        document.getElementById("initialBlock").style.display = "none";
+    }, 600);
+}
+
+/* ================================
+      2️⃣ AGREGAR TODAS LAS ESTRELLAS
+================================ */
+function addStar() {
+    for (let i = 0; i < total; i++) {
         setTimeout(() => {
-          const star = document.createElement("div");
-          star.classList.add("star");
-          star.textContent = "★";
-          if (i < hombres) star.style.color = colors.hombre;
-          else if (i < hombres + mujeres) star.style.color = colors.mujer;
-          else star.style.color = colors.mixto;
-          starsContainer.appendChild(star);
-        }, (i / total) * 3000);
-      }
-    }
+            const star = document.createElement("div");
+            star.classList.add("star");
+            star.textContent = "★";
 
-    function showFinalText() {
-      finalText.innerHTML = `
+            if (i < hombres) star.style.color = colors.hombre;
+            else if (i < hombres + mujeres) star.style.color = colors.mujer;
+            else star.style.color = colors.mixto;
+
+            starsContainer.appendChild(star);
+        }, (i / total) * 3000);
+    }
+}
+
+/* ================================
+      3️⃣ TEXTO FINAL
+================================ */
+function showFinalText() {
+    finalText.innerHTML = `
         <div class="final-title">259 artistas</div>
         <div class="legend">
-          Desde 1960, en el Festival se han presentado:<br><br>
-          <span style="color:#EB008B;">● ${hombres} hombres</span><br>
-          <span style="color:#7E4782;">● ${mujeres} mujeres</span><br>
-          <span style="color:#8FA3CC;">● ${mixtos} proyectos mixtos</span>
+            Desde 1960, en el Festival se han presentado:<br><br>
+            <span style="color:#EB008B;">● ${hombres} hombres</span><br>
+            <span style="color:#7E4782;">● ${mujeres} mujeres</span><br>
+            <span style="color:#8FA3CC;">● ${mixtos} proyectos mixtos</span>
         </div>
-      `;
-      finalText.style.animation = "fadeIn 1.8s forwards";
-    }
+    `;
+    finalText.style.animation = "fadeIn 1.8s forwards";
+}
 
-    // Ejecuta la secuencia cuando la página carga
-    window.addEventListener('load', () => {
-      setTimeout(() => {
-        hideInitialBlock();
-        addStar();
-        const totalTime = 3300; // 3.3s
-        setTimeout(showFinalText, totalTime);
-      }, 2000);
-    });
+/* ================================
+      4️⃣ TODA LA SECUENCIA AL HACER CLICK
+================================ */
+
+// 👇 AHORA LA ANIMACIÓN SE ACTIVA AQUÍ
+document.getElementById("bigStar").addEventListener("click", () => {
+
+    hideInitialBlock();          // desaparece intro
+    addStar();                   // empiezan a aparecer estrellas
+
+    const totalTime = (3 + 0.3) * 1000;
+    setTimeout(() => {
+        showFinalText();
+    }, totalTime);
+});
   </script>
 
   <!-- JAVASCRIPT PARA TRANSICIÓN DE COLORES -->
