@@ -221,14 +221,14 @@
 
 
 .pregunta.destacada {
-  background-color: #eb008b;
-  border-left: 6px solid black;
-  padding: 15px 20px;
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin: 20px 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #eb008b;
   text-align: center;
+  margin: 30px 0;
+  text-transform: uppercase;
 }
+
 
 
 .inicios-viña {
