@@ -335,27 +335,6 @@
   font-size: 18px;
 }
 
-
-.grafico-estrellas {
-  position: relative; /* importantísimo */
-  margin-top: 120px !important;
-  margin-bottom: 120px !important;
-}
-
-.parrafo.analisis.estrellas{
-  text-align: center; /* centra el texto dentro del div */
-  max-width: 900px;   /* opcional: limita ancho para que se vea mejor */
-  margin: 0 auto;     /* centra el div en la página si tiene ancho menor al contenedor */
-  margin-top: 70px;
-  margin-bottom: 100px;
-  text-align: justify;
-  padding: 20px 40px; 
-  font-family: "Futura", sans-serif;
-  line-height: 1.6;
-  font-size: 18px;
-  color: antiquewhite;
-  }
-
 .grafico-artistas-totales {
 
   text-align: center; /* centra el texto dentro del div */
@@ -384,6 +363,18 @@
 .seccion p:last-child {
   margin-bottom: 0;
 }
+
+.parrafo.tv.y.streaming {
+  max-width: 900px;       /* limita el ancho del bloque */
+  margin: 100px auto;     /* centra horizontalmente y separa verticalmente */
+  padding: 20px 40px;
+  font-family: "Futura", sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+  text-align: justify;    /* justifica el texto dentro del div */
+  color: antiquewhite;
+}
+
 
 .carrusel-wrapper {
   transform: scale(0.80);   /* achica el tamaño total */
