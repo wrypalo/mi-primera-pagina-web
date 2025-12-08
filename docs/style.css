@@ -377,6 +377,21 @@
     margin: 100px auto;
 }
 
+.carrusel {
+  width: 1000px;       /* tamaño base del gráfico */
+  max-width: 100%;
+  margin: 0 auto;      /* centra horizontalmente */
+  display: flex;
+  justify-content: center;
+}
+
+.carrusel .flourish-embed {
+  transform: scale(0.75);   /* achica el gráfico (0.75 = 75%) */
+  transform-origin: top center;
+  width: 1000px !important; /* necesario para que el scale funcione */
+  max-width: 1000px !important;
+}
+
 .carrusel-wrapper {
   transform: scale(0.80);   /* achica el tamaño total */
   transform-origin: top center;
