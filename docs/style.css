@@ -402,3 +402,15 @@
     display: block;     /* necesario para centrar con margin */
     margin: 100px auto; 
 }
+
+.parrafo.brecha.1 {
+  max-width: 900px;       /* limita el ancho del bloque */
+  margin: 100px auto;     /* centra horizontalmente y separa verticalmente */
+  padding: 20px 40px;
+  font-family: "Futura", sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+  text-align: justify;    /* justifica el texto dentro del div */
+  color: black;
+
+}
