@@ -373,6 +373,12 @@
   color: antiquewhite;
 }
 
+.grafico img {
+    width: 700px;       /* tamaño de la imagen */
+    display: block;     /* necesario para centrar con margin */
+    margin: 100px auto;
+}
+
 .carrusel-wrapper {
   transform: scale(0.80);   /* achica el tamaño total */
   transform-origin: top center;
