@@ -605,8 +605,8 @@
 }
 
 .foto.final {
-  
-    width: 700px;       /* tamaño de la imagen */
-    display: block;     /* necesario para centrar con margin */
+    width: 400px;
+    display: block;
     margin: 100px auto;
+    transform: translateX(20px); /* mueve a la derecha o izquierda */
 }
