@@ -8,22 +8,23 @@
 
 
     /* básico para que el menú fijo no tape el contenido */
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: "Futura", sans-serif;
-      padding-top: 84px; /* ajusta según la altura real de tu top-bar */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Futura", sans-serif;
+  padding-top: 84px;
 
-    background: linear-gradient(
-    #8fa3cc, 0%,
-    #97A8D2, 20%,
-    #11102c, 40%,
-    #2e3566, 60%,
-    #97A8D2, 80%,
-    #11102c 100%,
+  background: linear-gradient(
+    #8fa3cc,
+    #97A8D2,
+    #11102c,
+    #2e3566,
+    #97A8D2,
+    #11102c
   );
+  
   background-attachment: fixed;
-  background-size: 100% 1000%;
+  background-size: 100% 1500%; /* prueba con este número */
 }
 
 .seccion-1,
@@ -32,7 +33,7 @@
 .seccion-4,
 .seccion-5,
 .seccion-6 {
-  background: transparent;
+  background-color: transparent !important;
 }
 
 /* Barra superior */
