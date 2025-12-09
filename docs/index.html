@@ -24,6 +24,9 @@
   <div class="linea-scroll">
     <img src="logo.png" class="icono-lateral" alt="Logo móvil">
   </div>
+
+    <img src="quinta avergara.png" class="quinta vergara" alt="quinta vergara">
+
 </nav>
 
   <!-- CONTENEDOR PRINCIPAL -->
@@ -380,11 +383,15 @@ document.getElementById("bigStar").addEventListener("click", () => {
 <script>
 window.addEventListener("scroll", () => {
   const icon = document.querySelector(".icono-lateral");
+  const meta = document.querySelector(".icono-meta");
+
   const maxScroll = document.body.scrollHeight - window.innerHeight;
   const progress = window.scrollY / maxScroll;
 
-  const maxMove = window.innerWidth - 120;
-  const x = progress * maxMove;
+  // posición final = posición de la foto meta
+  const metaX = meta.offsetLeft - 40; // se ajusta para centrar mejor
+
+  const x = progress * metaX;
 
   icon.style.transform = `translateX(${x}px)`;
 
@@ -392,7 +399,7 @@ window.addEventListener("scroll", () => {
   const brillo = document.createElement("div");
   brillo.classList.add("brillito");
 
-  brillo.style.left = (x + 35) + "px";
+  brillo.style.left = (x + 30) + "px";
   brillo.style.top = "32px";
 
   document.querySelector(".linea-scroll").appendChild(brillo);
@@ -400,5 +407,6 @@ window.addEventListener("scroll", () => {
   setTimeout(() => brillo.remove(), 800);
 });
 </script>
+
 </body>
 </html>
