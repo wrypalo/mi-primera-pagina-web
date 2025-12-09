@@ -19,8 +19,8 @@
 <body>
 
   <!-- MENÚ SUPERIOR -->
-<nav class="top-bar">
 
+<nav class="top-bar">
   <div class="linea-scroll">
     <img src="logo.png" class="icono-lateral" alt="Logo móvil">
   </div>
@@ -376,12 +376,12 @@ document.getElementById("bigStar").addEventListener("click", () => {
 
 
 <script>
-window.addEventListener("scroll", () => {
-  const icon = document.querySelector(".icono");
+document.addEventListener("scroll", () => {
+  const icon = document.querySelector(".icono-lateral");
   const maxScroll = document.body.scrollHeight - window.innerHeight;
   const progress = window.scrollY / maxScroll;
 
-  const maxMove = window.innerWidth - 120; 
+  const maxMove = window.innerWidth - 100; 
   icon.style.transform = `translateX(${progress * maxMove}px)`;
 });
 </script>
