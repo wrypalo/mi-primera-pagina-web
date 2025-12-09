@@ -19,9 +19,8 @@ body {
 
 /* TODAS las secciones deben ser transparentes */
 .seccion {
-  background: transparent !important;
   min-height: 100vh;
-  display: block;
+  scroll-margin-top: 84px; /* tu menú fijo */
 }
 
 /* Barra superior */
