@@ -607,6 +607,6 @@
 .foto.final {
     width: 400px;
     display: block;
-    margin: 100px auto;
+    margin: 0 auto;
     transform: translateX(20px); /* mueve a la derecha o izquierda */
 }
