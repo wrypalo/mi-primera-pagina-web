@@ -21,8 +21,13 @@
   <!-- MENÚ SUPERIOR -->
 <nav class="top-bar">
   <button class="logo-btn">
-    <img src="logo.png" class="icono" alt="Logo">
+    <img src="logo.png" class="icono" alt="Logo fijo">
   </button>
+
+  <div class="linea-scroll">
+    <div class="linea"></div>
+    <img src="logo.png" class="icono-movil" alt="Logo que se mueve">
+  </div>
 </nav>
 
   <!-- CONTENEDOR PRINCIPAL -->
@@ -375,15 +380,13 @@ document.getElementById("bigStar").addEventListener("click", () => {
 
 
 <script>
-document.addEventListener("scroll", () => {
-    const icon = document.querySelector(".icono");
-    const maxScroll = document.body.scrollHeight - window.innerHeight;
-    const progress = window.scrollY / maxScroll;  // valor entre 0 y 1
+window.addEventListener("scroll", () => {
+  const icon = document.querySelector(".icono");
+  const maxScroll = document.body.scrollHeight - window.innerHeight;
+  const progress = window.scrollY / maxScroll;
 
-    const maxMove = 200; // 👉 Máximo movimiento hacia la derecha (px)
-    const x = progress * maxMove;
-
-    icon.style.transform = `translateX(${x}px)`;
+  const maxMove = window.innerWidth - 120; 
+  icon.style.transform = `translateX(${progress * maxMove}px)`;
 });
 </script>
 
