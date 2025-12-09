@@ -362,7 +362,7 @@
 
 .parrafo.top {
   max-width: 900px;       /* limita el ancho del bloque */
-  margin: 100px auto;     /* centra horizontalmente y separa verticalmente */
+  margin: 50px auto;     /* centra horizontalmente y separa verticalmente */
   padding: 20px 40px;
   font-family: "Futura", sans-serif;
   line-height: 1.6;
@@ -390,8 +390,7 @@
   transform-origin: top center;
   width: 1000px !important; /* necesario para que el scale funcione */
   max-width: 1000px !important;
-  margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
+  margin-bottom: 20px !important;
 }
 
 .carrusel-wrapper {
@@ -406,8 +405,7 @@
 .carrusel-wrapper .flourish-embed {
   width: 1000px !important; /* tamaño base para que el scale funcione bien */
   max-width: 1000px !important;
-  margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
+  margin-bottom: 20px !important;
 }
 
 .grafico-latinos {
@@ -422,6 +420,7 @@
   transform-origin: top center;
   width: 1000px !important; /* base del gráfico */
   max-width: 1000px;
+  margin-bottom: 20px;
 }
 
 .grafico-evolucion-brecha img {
