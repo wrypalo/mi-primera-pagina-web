@@ -641,7 +641,3 @@ body {
     margin: 0 auto;
     transform: translateX(20px); /* mueve a la derecha o izquierda */
 }
-
-* {
-  background-color: transparent;
-}
