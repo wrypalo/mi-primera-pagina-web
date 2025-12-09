@@ -13,22 +13,15 @@ body {
   padding: 0;
   font-family: "Futura", sans-serif;
   padding-top: 84px;
-  transition: background-color 0.8s ease; /* transición suave */
+  transition: background-color 0.8s ease;
+  background-color: #8fa3cc; /* color inicial */
 }
 
-.seccion-1,
-.seccion-2,
-.seccion-3,
-.seccion-4,
-.seccion-5,
-.seccion-6 {
-  background-color: transparent !important;
-}
-
+/* TODAS las secciones deben ser transparentes */
 .seccion {
+  background: transparent !important;
   min-height: 100vh;
   display: block;
-  position: relative;
 }
 
 /* Barra superior */
