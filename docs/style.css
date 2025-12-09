@@ -13,10 +13,6 @@ body {
   padding: 0;
   font-family: "Futura", sans-serif;
   padding-top: 84px;
-
-  /* color inicial por si carga arriba */
-  background-color: #8fa3cc; 
-
   transition: background-color 0.8s ease; /* transición suave */
 }
 
