@@ -377,32 +377,26 @@ document.getElementById("bigStar").addEventListener("click", () => {
 
 <script>
 window.addEventListener("scroll", () => {
-    const icon = document.querySelector(".icono-lateral");
-    const linea = document.querySelector(".linea-scroll");
+  const icon = document.querySelector(".icono-lateral");
+  const maxScroll = document.body.scrollHeight - window.innerHeight;
+  const progress = window.scrollY / maxScroll;
 
-    const maxScroll = document.body.scrollHeight - window.innerHeight;
-    const progress = window.scrollY / maxScroll;
+  const maxMove = window.innerWidth - 120;
+  const x = progress * maxMove;
 
-    const maxMove = window.innerWidth - 120;
-    const x = progress * maxMove;
+  icon.style.transform = `translateX(${x}px)`;
 
-// mover icono
-    icon.style.transform = `translateX(${x}px)`;
+  // ✨ Crear brillito bonito
+  const brillo = document.createElement("div");
+  brillo.classList.add("brillito");
 
-// ✨ crear brillito
-    const brillo = document.createElement("div");
-    brillo.classList.add("brillito");
+  brillo.style.left = (x + 35) + "px";
+  brillo.style.top = "32px";
 
-// posición del brillo sobre la línea
-    brillo.style.left = (x + 35) + "px";
-    brillo.style.top = "32px";
+  document.querySelector(".linea-scroll").appendChild(brillo);
 
-    linea.appendChild(brillo);
-
-// eliminar luego de animarse
- setTimeout(() => brillo.remove(), 600);
+  setTimeout(() => brillo.remove(), 800);
 });
 </script>
-
 </body>
 </html>
